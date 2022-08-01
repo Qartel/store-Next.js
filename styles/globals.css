@@ -29,8 +29,21 @@ width: 100%;
 .navbar-container{
   display: flex;
   justify-content: space-between;
-  margin: 6px 18px;
+  /* margin: 6px 18px; */
   position: relative;
+  max-width: 1400px; 
+margin: auto;
+width: 100%;
+}
+
+.navbar-header {
+  margin: 16px 12px 0 0;
+}
+
+.main-logo{
+  height: 50px;
+  width: 50px;
+  margin: 0px 0 20px 2px;
 }
 .marquee-text{
   font-size: 29px;
@@ -67,10 +80,11 @@ width: 100%;
 .logo{
   color: gray;
   font-size: 18px;
-
 }
-.cart-icon{
-  font-size: 25px;
+
+.account-icon {
+  font-size: 32px;
+  margin-left: 8px;
   color: gray;
   cursor: pointer;
   position: relative;
@@ -78,7 +92,30 @@ width: 100%;
   border: none;
   background-color: transparent;
 }
-.cart-icon:hover{
+
+.wish-icon {
+  font-size: 32px;
+  margin-left: 8px;
+  color: gray;
+  cursor: pointer;
+  position: relative;
+  transition: transform .4s ease;
+  border: none;
+  background-color: transparent;
+}
+
+.cart-icon{
+  font-size: 32px;
+  margin-left: 8px;
+  color: gray;
+  cursor: pointer;
+  position: relative;
+  transition: transform .4s ease;
+  border: none;
+  background-color: transparent;
+}
+
+.cart-icon:hover, .account-icon:hover, .wish-icon:hover{
   transform: scale(1.1,1.1);
 }
 .cart-item-qty{
